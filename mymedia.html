@@ -45,5 +45,18 @@
                 <td>puri jagannadh</td>
             </tr>
         </table>
+        <hr>
+        <h3>CODE SNIPPET</h3>
+        this example Node.js code creates an empty file using open method
+        <pre>
+            const fileSystem = require('fs');
+            const createFile = fileName => {
+                fileSystem.open(fileName, 'w', error => {
+                    if (error) throw error;
+                    console.log('Saved!');
+                });
+            };
+        </pre>
+        <a href="https://flaviocopes.com/how-to-create-empty-file-node/">snippet source</a>
     </body>
 </html>
